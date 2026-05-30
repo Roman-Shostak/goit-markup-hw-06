@@ -78,28 +78,10 @@ img {
 /* -------------------------------------------------------------------------- */
 /* Layout utilities                                                           */
 /* -------------------------------------------------------------------------- */
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.flex-h {
-  display: flex;
-}
-
-.align-items--center {
-  align-items: center;
-}
-
 .image {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.section {
-  padding: 120px 0;
 }
 
 .section--team {
@@ -110,9 +92,7 @@ img {
 /* Typography utilities                                                       */
 /* -------------------------------------------------------------------------- */
 .text-size-h1 {
-  font-size: 56px;
   font-weight: 700;
-  line-height: 1.07;
   text-align: center;
   color: var(--white);
 }
@@ -177,4 +157,38 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Tablet (768px and up)                                                      */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+}
+
+/* -------------------------------------------------------------------------- */
+/* Desktop (1158px and up)                                                    */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .flex-h {
+    display: flex;
+  }
+
+  .align-items--center {
+    align-items: center;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
+
+  .text-size-h1 {
+    font-size: 56px;
+    line-height: 1.07;
+  }
 }

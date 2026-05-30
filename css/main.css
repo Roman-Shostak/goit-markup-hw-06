@@ -1,3 +1,10 @@
+/* -------------------------------------------------------------------------- */
+/* Breakpoints (mobile-first)                                                  */
+/*   base (no media query)      — Mobile, 320px and up                        */
+/*   @media (min-width: 768px)  — Tablet                                       */
+/*   @media (min-width: 1158px) — Desktop                                      */
+/* -------------------------------------------------------------------------- */
+
 /* Base → page flow (top to bottom) → overlay */
 @import './common.css';
 @import './header.css';
