@@ -1,0 +1,129 @@
+/* -------------------------------------------------------------------------- */
+/* Footer                                                                     */
+/* -------------------------------------------------------------------------- */
+.footer {
+  padding: 100px 0;
+  background-color: var(--navy-blue);
+}
+
+.footer_layout {
+  display: flex;
+}
+
+.footer_brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-right: 120px;
+}
+
+.footer_brand_text {
+  max-width: 264px;
+  color: var(--cloud);
+}
+
+.footer_social_title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.footer_social_list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer_social_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer_social_link:hover,
+.footer_social_link:focus {
+  background-color: var(--green);
+}
+
+.footer_social_icon {
+  fill: var(--cloud);
+}
+
+.footer_form {
+  margin-left: auto;
+}
+
+.footer_form_field {
+  width: 264px;
+  height: 40px;
+  margin-right: 24px;
+  padding: 13px 16px;
+  padding-top: 10px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer_form_field::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.footer_form_field:hover,
+.footer_form_field:focus {
+  border-color: var(--green);
+}
+
+.footer_form_field:focus,
+.footer_form_field:focus-visible {
+  outline: none;
+}
+
+.footer_social_title.is-label {
+  display: block;
+  margin-bottom: 16px;
+  pointer-events: none;
+}
+
+.footer_form_button {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  border-radius: 4px;
+  background-color: var(--iris);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+}
+
+.footer_form_button:hover,
+.footer_form_button:focus {
+  background-color: var(--green);
+}
+
+.footer_form_field-wrap {
+  display: flex;
+}
+
+.footer_form_button-icon {
+  fill: var(--white);
+}
