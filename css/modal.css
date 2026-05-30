@@ -1,6 +1,3 @@
-/* -------------------------------------------------------------------------- */
-/* Modal — backdrop & panel                                                   */
-/* -------------------------------------------------------------------------- */
 .modal_overlay {
   position: fixed;
   top: 0;
@@ -36,9 +33,6 @@
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* -------------------------------------------------------------------------- */
-/* Modal — close                                                              */
-/* -------------------------------------------------------------------------- */
 .modal_close {
   display: flex;
   align-items: center;
@@ -73,9 +67,6 @@
   fill: var(--white);
 }
 
-/* -------------------------------------------------------------------------- */
-/* Modal — form layout & title                                                */
-/* -------------------------------------------------------------------------- */
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -90,9 +81,6 @@
   color: var(--navy-blue);
 }
 
-/* -------------------------------------------------------------------------- */
-/* Modal — labels & fields                                                    */
-/* -------------------------------------------------------------------------- */
 .modal-form_label {
   margin-bottom: 4px;
   font-size: 12px;
@@ -127,7 +115,7 @@
   color: var(--navy-blue-modal);
 }
 
-.modal-form_field--textarea {
+.is-textarea {
   height: 120px;
   margin-bottom: 16px;
   padding: 8px 16px;
@@ -139,9 +127,9 @@
   border-color: var(--iris);
 }
 
-.modal-form_field--textarea:hover,
-.modal-form_field--textarea:focus,
-.modal-form_field--textarea:focus-visible {
+.is-textarea:hover,
+.is-textarea:focus,
+.is-textarea:focus-visible {
   border-color: var(--iris);
 }
 
@@ -162,9 +150,6 @@
   fill: var(--iris);
 }
 
-/* -------------------------------------------------------------------------- */
-/* Modal — consent & actions                                                  */
-/* -------------------------------------------------------------------------- */
 .modal-form_checkbox-wrap {
   margin-bottom: 24px;
 }
@@ -246,15 +231,9 @@ input[name='checkbox']:checked + .modal-form_checkbox-label .modal-form_checkbox
   background-color: var(--ocean);
 }
 
-/* -------------------------------------------------------------------------- */
-/* Tablet (768px and up)                                                      */
-/* -------------------------------------------------------------------------- */
 @media (min-width: 768px) {
 }
 
-/* -------------------------------------------------------------------------- */
-/* Desktop (1158px and up)                                                    */
-/* -------------------------------------------------------------------------- */
 @media (min-width: 1158px) {
   .modal_window {
     width: 408px;

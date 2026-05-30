@@ -21,14 +21,14 @@
   </head>
   <body>
     <header class="page-header" id="header">
-      <div class="container flex-h align-items--center">
-        <a class="logo logo--header link" href="./index.html"
+      <div class="container is-header">
+        <a class="logo is-logo-header link" href="./index.html"
           ><span class="logo_accent">Web</span>Studio</a
         >
         <nav class="main-nav">
           <ul class="main-nav_list">
             <li>
-              <a class="main-nav_link main-nav_link--active link" href="#features">Features</a>
+              <a class="main-nav_link is-active link" href="#features">Features</a>
             </li>
             <li>
               <a class="main-nav_link link" href="#team">Team</a>
@@ -51,13 +51,15 @@
         </address>
       </div>
     </header>
+
     <main>
       <section class="hero" id="hero">
-        <div class="container hero_container">
-          <h1 class="text-size-h1 hero_title">Effective Solutions for Your Business</h1>
+        <div class="container is-hero">
+          <h1 class="text-size-h1 is-hero-title">Effective Solutions for Your Business</h1>
           <button class="button" type="button">Order Service</button>
         </div>
       </section>
+
       <section class="section" id="features">
         <div class="container">
           <h2 class="sr-only">Our features</h2>
@@ -69,13 +71,14 @@
                     <use href="./images/icons.svg#antena"></use>
                   </svg>
                 </div>
-                <h3 class="text-size-h3 features_item_title">Strategy</h3>
+                <h3 class="text-size-h3 is-features-title">Strategy</h3>
                 <p>
                   Our goal is to identify the business problem to walk away with the perfect and
                   creative solution.
                 </p>
               </div>
             </li>
+
             <li class="features_item">
               <div class="features_item_content">
                 <div class="features_item_icon">
@@ -83,13 +86,14 @@
                     <use href="./images/icons.svg#clock"></use>
                   </svg>
                 </div>
-                <h3 class="text-size-h3 features_item_title">Punctuality</h3>
+                <h3 class="text-size-h3 is-features-title">Punctuality</h3>
                 <p>
                   Bring the key message to the brand's audience for the best price within the
                   shortest possible time.
                 </p>
               </div>
             </li>
+
             <li class="features_item">
               <div class="features_item_content">
                 <div class="features_item_icon">
@@ -97,13 +101,14 @@
                     <use href="./images/icons.svg#diagram"></use>
                   </svg>
                 </div>
-                <h3 class="text-size-h3 features_item_title">Diligence</h3>
+                <h3 class="text-size-h3 is-features-title">Diligence</h3>
                 <p>
                   Research and confirm brands with the strongest digital growth opportunities and
                   minimize risk.
                 </p>
               </div>
             </li>
+
             <li class="features_item">
               <div class="features_item_content">
                 <div class="features_item_icon">
@@ -111,7 +116,7 @@
                     <use href="./images/icons.svg#astronaut"></use>
                   </svg>
                 </div>
-                <h3 class="text-size-h3 features_item_title">Technologies</h3>
+                <h3 class="text-size-h3 is-features-title">Technologies</h3>
                 <p>
                   Design practice focused on digital experiences. We bring forth a deep passion for
                   problem-solving.
@@ -121,9 +126,10 @@
           </ul>
         </div>
       </section>
-      <section class="section section--team" id="team">
+
+      <section class="section is-team" id="team">
         <div class="container">
-          <h2 class="text-size-h2 team_title">Our Team</h2>
+          <h2 class="text-size-h2 is-team-title">Our Team</h2>
           <ul class="team_list">
             <li class="team_item">
               <img
@@ -181,6 +187,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="team_item">
               <img
                 class="image"
@@ -237,6 +244,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="team_item">
               <img
                 class="image"
@@ -293,6 +301,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="team_item">
               <img
                 class="image"
@@ -352,9 +361,10 @@
           </ul>
         </div>
       </section>
+
       <section class="section" id="portfolio">
         <div class="container">
-          <h2 class="text-size-h2 portfolio_title">Our Portfolio</h2>
+          <h2 class="text-size-h2 is-portfolio-title">Our Portfolio</h2>
           <ul class="portfolio_list">
             <li class="portfolio_item">
               <div class="portfolio_item_media">
@@ -498,11 +508,12 @@
         </div>
       </section>
     </main>
+
     <footer class="footer" id="footer">
-      <div class="container flex-h">
+      <div class="container is-footer">
         <div class="footer_layout">
           <div class="footer_brand">
-            <a class="logo logo--footer link" href="./index.html"
+            <a class="logo is-logo-footer link" href="./index.html"
               ><span class="logo_accent">Web</span>Studio</a
             >
             <p class="footer_brand_text">
@@ -567,6 +578,7 @@
         </form>
       </div>
     </footer>
+
     <div id="modal" class="modal_overlay">
       <div class="modal_window">
         <button class="modal_close" type="button">
@@ -603,7 +615,7 @@
 
             <label class="modal-form_label" for="modal-comment">Comment</label>
             <textarea
-              class="modal-form_field modal-form_field--textarea"
+              class="modal-form_field is-textarea"
               name="comment"
               id="modal-comment"
               placeholder="Text input"
