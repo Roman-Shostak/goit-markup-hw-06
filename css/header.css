@@ -9,6 +9,7 @@
 .is-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -25,14 +26,40 @@
   color: var(--iris);
 }
 
+.is-logo-header {
+  display: block;
+  padding: 16px 0;
+}
+
 .is-logo-footer {
   color: var(--cloud);
+}
+
+/* Burger (mobile only) */
+.burger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-menu_icon {
+  fill: var(--navy-blue);
+}
+
+/* Navigation & contacts are hidden on mobile */
+.main-nav {
+  display: none;
 }
 
 .main-nav_link {
   font-weight: 500;
   color: var(--navy-blue);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--anim);
 }
 
 .is-active,
@@ -42,12 +69,13 @@
 }
 
 .contacts {
+  display: none;
   font-style: normal;
 }
 
 .contacts_link {
   color: var(--slate);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--anim);
 }
 
 .contacts_link:hover,
@@ -56,11 +84,16 @@
 }
 
 @media (min-width: 768px) {
-}
+  .burger-menu {
+    display: none;
+  }
 
-@media (min-width: 1158px) {
   .is-logo-header {
-    margin-right: 76px;
+    margin-right: 120px;
+  }
+
+  .main-nav {
+    display: flex;
   }
 
   .main-nav_list {
@@ -70,7 +103,7 @@
 
   .main-nav_link {
     position: relative;
-    display: inline-block;
+    display: block;
     padding: 24px 0;
   }
 
@@ -85,7 +118,7 @@
     border-radius: 2px;
     background-color: var(--ocean);
     opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--anim);
   }
 
   .is-active::after {
@@ -93,11 +126,36 @@
   }
 
   .contacts {
+    display: flex;
     margin-left: auto;
   }
 
   .contacts_list {
     display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contacts_link {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media (min-width: 1158px) {
+  .is-logo-header {
+    margin-right: 76px;
+  }
+
+  .contacts_list {
+    flex-direction: row;
     gap: 40px;
+  }
+
+  .contacts_link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }

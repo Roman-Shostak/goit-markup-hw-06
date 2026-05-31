@@ -11,6 +11,11 @@
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
   --cornflower: #e7e9fc;
   --green: #31d0aa;
+
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --card-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 body {
@@ -66,23 +71,31 @@ img {
   height: auto;
 }
 
-.image {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/* ------------ Layout ------------ */
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-.is-team {
-  background-color: var(--cloud);
+.section {
+  padding: 96px 0;
 }
+
+/* ------------ Typography ------------ */
 
 .text-size-h1 {
+  font-size: 36px;
   font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
 }
 
-.text-size-h2 {
+.section-title {
+  margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -103,6 +116,8 @@ img {
   text-align: center;
 }
 
+/* ------------ Button ------------ */
+
 .button {
   padding: 16px 32px;
   border: none;
@@ -113,10 +128,9 @@ img {
   letter-spacing: 0.04em;
   color: var(--white);
   background-color: var(--iris);
-  cursor: pointer;
   transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color var(--anim),
+    box-shadow var(--anim);
 }
 
 .button:hover,
@@ -124,6 +138,67 @@ img {
   background-color: var(--ocean);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+
+/* ------------ Social links (shared) ------------ */
+
+.socials {
+  display: flex;
+}
+
+.socials_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  transition: background-color var(--anim);
+}
+
+.socials_link:hover,
+.socials_link:focus {
+  background-color: var(--ocean);
+}
+
+.socials_icon {
+  fill: var(--cloud);
+}
+
+/* ------------ Close button (shared) ------------ */
+
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 50%;
+  background-color: var(--cornflower);
+  transition:
+    background-color var(--anim),
+    border-color var(--anim);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  border-color: var(--ocean);
+  background-color: var(--ocean);
+}
+
+.close-btn_icon {
+  fill: var(--navy-blue);
+  transition: fill var(--anim);
+}
+
+.close-btn:hover .close-btn_icon,
+.close-btn:focus .close-btn_icon {
+  fill: var(--white);
+}
+
+/* ------------ Utilities ------------ */
 
 .sr-only {
   position: absolute;
@@ -139,21 +214,23 @@ img {
 }
 
 @media (min-width: 768px) {
-}
-
-@media (min-width: 1158px) {
   .container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-
-  .section {
-    padding: 120px 0;
+    max-width: 768px;
   }
 
   .text-size-h1 {
     font-size: 56px;
     line-height: 1.07;
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 120px 0;
   }
 }

@@ -1,17 +1,53 @@
 .hero {
+  padding: 72px 0;
+  background-color: var(--navy-blue);
   background-image:
     linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-mobile@2x.jpg);
+  }
 }
 
 .is-hero {
   text-align: center;
 }
 
+.is-hero-title {
+  max-width: 216px;
+  margin: 0 auto 72px;
+}
+
 @media (min-width: 768px) {
+  .hero {
+    padding: 112px 0;
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-tablet.jpg);
+  }
+
+  .is-hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx),
+  (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-tablet@2x.jpg);
+  }
 }
 
 @media (min-width: 1158px) {
@@ -19,10 +55,22 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 188px 0;
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-desktop.jpg);
   }
 
   .is-hero-title {
-    max-width: 496px;
-    margin: 0 auto 48px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi),
+  (min-width: 1158px) and (min-resolution: 2dppx),
+  (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image:
+      linear-gradient(180deg, rgba(46, 47, 66, 0.7) 0%, rgba(46, 47, 66, 0.7) 100%),
+      url(../images/hero-bg-desktop@2x.jpg);
   }
 }

@@ -1,9 +1,48 @@
+.features_list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+/* Icon decoration box appears on desktop only */
+.features_item_icon {
+  display: none;
+}
+
+.is-features-title {
+  margin-bottom: 8px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.features_item p {
+  font-weight: 500;
+}
+
 @media (min-width: 768px) {
+  .features_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .features_item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .is-features-title {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1158px) {
   .features_list {
-    display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
   }
 
@@ -16,12 +55,19 @@
     align-items: center;
     justify-content: center;
     height: 112px;
+    margin-bottom: 8px;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
     background-color: var(--cloud);
   }
 
   .is-features-title {
-    margin: 8px 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .features_item p {
+    font-weight: 400;
   }
 }
