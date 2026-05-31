@@ -46,14 +46,8 @@
   background-color: var(--green);
 }
 
-.footer_social_title.is-label {
-  display: block;
-  margin-bottom: 16px;
-  pointer-events: none;
-}
-
 .footer_form {
-  align-self: stretch;
+  width: 288px;
 }
 
 .footer_form_field-wrap {
@@ -137,7 +131,7 @@
   }
 
   .footer_form {
-    align-self: auto;
+    width: auto;
     flex-basis: 100%;
   }
 
