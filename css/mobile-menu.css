@@ -5,6 +5,7 @@
   background-color: var(--white);
   visibility: hidden;
   opacity: 0;
+  pointer-events: none;
   transform: translateX(100%);
   transition:
     transform var(--anim),
@@ -15,6 +16,7 @@
 .mobile-menu.is-open {
   visibility: visible;
   opacity: 1;
+  pointer-events: auto;
   transform: translateX(0);
 }
 
@@ -66,27 +68,27 @@
   gap: 24px;
 }
 
-.mobile-menu_phone {
+.mobile-menu_phone,
+.mobile-menu_mail {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  color: var(--navy-blue);
   transition: color var(--anim);
 }
 
+.mobile-menu_phone {
+  color: var(--iris);
+}
+
 .mobile-menu_mail {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
   color: var(--slate);
-  transition: color var(--anim);
 }
 
 .mobile-menu_phone:hover,
 .mobile-menu_phone:focus,
 .mobile-menu_mail:hover,
 .mobile-menu_mail:focus {
-  color: var(--iris);
+  color: var(--ocean);
 }
 
 .mobile-menu_social {
